@@ -1,13 +1,15 @@
 'use strict';
 
 function thousands_separators(num) {
-  
+  	var returnStr = '';
 	var arr = num.toString().split(".");
     if(arr.length==2&&arr[1]!=0){
-  		formatNum1(arr[0])+"."+arr[1];
+  		returnStr = formatNum1(arr[0])+"."+arr[1];
   	}else{
-		formatNum1(arr[0]);
+		returnStr = formatNum1(arr[0]);
 	}
+	
+	return returnStr;
 	
 	function formatNum1(str){
 		var len = str.length;
