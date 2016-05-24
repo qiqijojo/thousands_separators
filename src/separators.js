@@ -13,7 +13,7 @@ function thousands_separators(num) {
 		var len = str.length;
 		if(len<=3){
 		  return str;
-		  }
+		}
 		var rest = len%3;
 		return rest>0?str.slice(0,rest)+","+str.slice(rest,len).match(/\d{3}/g).join(",") : str.slice(rest,len).match(/\d{3}/g).join(",");		
 	}	
