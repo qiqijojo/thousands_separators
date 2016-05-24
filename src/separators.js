@@ -2,7 +2,7 @@
 
 function thousands_separators(num) {
   
-	var arr = num.split(".");
+	var arr = num.toString().split(".");
     if(arr.length==2&&arr[1]!=0){
   		formatNum1(arr[0])+"."+arr[1];
   	}else{
